@@ -1,0 +1,211 @@
+/* the styling will be here */
+
+.fancy-line { 
+    border: 0; 
+    height: 1px;
+    position: relative;
+    margin: 0.5em 0;
+}
+.fancy-line:before {
+    top: -0.5em;
+    height: 1em;
+}
+.fancy-line:after {
+    height: 0.5em;
+    top: calc(-0.5em + 1px);        /* adjusted this */
+}
+
+.fancy-line:before, .fancy-line:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+}
+
+.fancy-line, .fancy-line:before {
+    background: radial-gradient(ellipse at center, #8ae1f5 0%, rgba(0,0,0,0) 75%);
+}
+/* */
+.btn-bottom-left {
+    position: fixed;
+    bottom: 5px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.header-t {
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    outline: black;
+    font-size: 45px;
+    width: auto;
+    text-shadow: 3px 3px 3px #16b5d1;
+}
+.btn-op {
+    background-color: white;
+    border: 0px;
+    padding: 0px;
+    outline: none;
+    margin-left: 5px;
+    float: left;
+    padding: 0px;
+    outline: none;
+}
+.para-right {
+    font-size: 25px;
+    padding-bottom: 0px;
+    color:white;
+    float: right;
+    font-family: cursive;
+}
+.btn-box-bottom {
+    margin-top: 8px;
+    margin-right: 5px;
+    margin-left: 5px;
+    float: left;
+    background-color: black;
+    border: none;
+    padding: 0px;
+    outline: none;
+}
+.bottom-icon {
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+.bottom-icon:hover {
+    background-color: black;
+    color: white;
+  }
+
+.input {
+    height: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+.input-box {
+    margin: auto;
+    width: 300px;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 3px grey;
+}
+.btn-done {
+    float: right;
+    background-color: white;
+    border: 0px;
+    padding: 0px;
+    visibility: hidden;
+    outline: none;
+    position: relative;
+    bottom: 18px;
+    right: 2px;
+}
+.input-box:hover .btn-done {
+    visibility: visible;
+}
+
+.input-title {
+    width: 270px;
+    font-size: larger;
+    padding-left: 10px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    height: 20px;
+    border: 0px;
+    outline: none;
+}
+
+.input-area {
+    height: 50px;
+    width: 275px; 
+    padding: 8px;
+    border: 0px;
+    resize: none;
+    outline: none;
+}
+
+.btn-box {
+    margin-right: 5px;
+    float: right;
+    background-color: white;
+    border: 0px;
+    padding: 0px;
+    visibility: hidden;
+    outline: none;
+}
+
+.icond {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    margin-top: 2px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: center;
+}
+.icond:hover {
+    background-color: black;
+    color: white;
+  }
+
+.icons {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 2px 2px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+}
+.icons:hover {
+    background-color: #5dd8ee;
+    color: white;
+  }
+
+  .note-sheet {
+    margin: auto;
+    height: auto;
+    margin-top: 15px;
+    align-self: center;
+    padding: 20px;
+    width: 55%
+  }
+
+  .note_record {
+    position: relative;
+    width: 200px;
+    height: auto;
+    float: left;
+    font-family:  system-ui;
+    padding-left: 5px;padding-top: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 2px grey;
+    border: 1px solid black;
+  }
+  .note_record:hover {
+    box-shadow: 0px 0px 3px 3px #16b5d1;
+  }
+  .note_record:hover .btn-vert {
+      visibility: visible;
+  }
+
+  .btn-vert {
+    margin-right: 5px;
+    float: right;
+    background-color: white;
+    border: 0px;
+    padding: 0px;
+    visibility: hidden;
+    outline: none;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./practisecss.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body style=" margin: 0px;padding: 0px;">
+    <!--header title -->
+    <h1 class="header-t">Note-Keeper</h1>
+    <div class="fancy-line"></div>
+
+    <!-- Input Box for each note-->
+    <div class="input col-md-4 col-xs-12">
+        <div class="input-box">
+            <form>
+                <input class="input-title" type="text" placeholder="Title" id="title" name="title" />
+                <hr style="margin: 3px;">
+                <textarea class="input-area" type="text" id="descrip" name="descrip" placeholder="Description..."></textarea>
+            </form>
+            <button class="btn-done" onclick="myval()">
+                <i class="material-icons icond">done</i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Appending notes one after another -->
+    <div class="note-sheet col-md-8 col-xs-12" id="wrapper"></div>
+    
+    <!-- onHover we will give 2 options one to edit(edit) other to delete (delete_sweep) and last one to make DUPLICATE (file_copy) -->
+    <div style="border: 1px solid black;height: auto;bottom: 0;width:100%;position: fixed;left: 0px;background-color: black;">
+        <button class="btn-box-bottom" onclick="addfocus()">
+            <i class="material-icons bottom-icon">add</i>
+        </button>
+        <button class="btn-box-bottom" onclick="clear_all()">
+            <i class="material-icons bottom-icon">clear_all</i>
+        </button>
+        <!-- <button onclick="check()">check</button> -->
+        <p class="para-right">(I should make a note about it...)</p>
+    </div>
+
+<script src="./practicejava.js"></script>
+</body>
+</html>
