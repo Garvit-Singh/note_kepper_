@@ -71,15 +71,15 @@
     outline: none;
 }
 .bottom-icon {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     border: none;
     cursor: pointer;
     text-align: center;
 }
 .bottom-icon:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
   }
 
 .input {
