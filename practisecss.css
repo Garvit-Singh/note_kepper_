@@ -178,7 +178,8 @@
     margin-top: 15px;
     align-self: center;
     padding: 20px;
-    width: 55%
+    width: 55%;
+    bottom: 25px;
   }
 
   .note_record {
