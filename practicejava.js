@@ -150,15 +150,16 @@ const add = ( data_object ) => {
             cln.childNodes[4].onclick= function() { alert("You can not duplicate a note from duplicated one more than ones.")}
             cln.childNodes[5].onclick= function() {
                if( tap%2 == 0 ) {
-                   alert("Tap on edit button when you are done")
                    const edittor = document.getElementById(document.activeElement.parentElement.id);
                    edittor.childNodes[0].contentEditable = "true";
                    edittor.childNodes[1].contentEditable = "true";
+                   cln.childNodes[5].childNodes[0].innerHTML="done";
                    tap = tap+1;
                } else {
                    const edittor = document.getElementById(document.activeElement.parentElement.id);
                    edittor.childNodes[0].contentEditable = "false";
                    edittor.childNodes[1].contentEditable = "false";
+                   cln.childNodes[5].childNodes[0].innerHTML="edit";
                    tap = tap+1;
                }
             }
@@ -166,7 +167,6 @@ const add = ( data_object ) => {
          };
          cln.childNodes[5].onclick= function() {
             if( tap%2 == 0 ) {
-                alert("Tap on edit button when you are done")
                 const edittor = document.getElementById(document.activeElement.parentElement.id);
                 edittor.childNodes[0].contentEditable = "true";
                 edittor.childNodes[1].contentEditable = "true";
@@ -202,7 +202,6 @@ const add = ( data_object ) => {
      btn1.onclick = function() {
         console.log(document.activeElement.parentElement);
         if( tap%2 == 0 ) {
-            alert("Tap on edit button when you are done")
             const edittor = document.getElementById(document.activeElement.parentElement.id);
             edittor.childNodes[0].contentEditable = "true";
             edittor.childNodes[1].contentEditable = "true";
