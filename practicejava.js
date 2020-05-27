@@ -170,12 +170,14 @@ const add = ( data_object ) => {
                 const edittor = document.getElementById(document.activeElement.parentElement.id);
                 edittor.childNodes[0].contentEditable = "true";
                 edittor.childNodes[1].contentEditable = "true";
+                cln.childNodes[5].childNodes[0].innerHTML="done";
                 console.log(edittor.childNodes[0]);     
                 tap = tap+1;
             } else {
                 const edittor = document.getElementById(document.activeElement.parentElement.id);
                 edittor.childNodes[0].contentEditable = "false";
                 edittor.childNodes[1].contentEditable = "false";
+                cln.childNodes[5].childNodes[0].innerHTML="edit";
                 console.log(edittor.childNodes[0]);     
                 tap = tap+1;
             }
@@ -195,8 +197,7 @@ const add = ( data_object ) => {
     const i1C = document.createAttribute("class");
     i1C.value="material-icons icond";
     i1.attributes.setNamedItem(i1C);
-    const i1_text = document.createTextNode("edit");
-    i1.appendChild(i1_text);
+    i1.innerHTML="edit";
     // have to add onclick for edit
      btn1.onclick = function() {
         console.log(document.activeElement.parentElement);
@@ -205,12 +206,14 @@ const add = ( data_object ) => {
             const edittor = document.getElementById(document.activeElement.parentElement.id);
             edittor.childNodes[0].contentEditable = "true";
             edittor.childNodes[1].contentEditable = "true";
+            i1.innerHTML="done";
             console.log(edittor.childNodes[0]);     
             tap = tap+1;
         } else {
             const edittor = document.getElementById(document.activeElement.parentElement.id);
             edittor.childNodes[0].contentEditable = "false";
             edittor.childNodes[1].contentEditable = "false";
+            i1.innerHTML="edit";
             console.log(edittor.childNodes[0]);     
             tap = tap+1;
         }
